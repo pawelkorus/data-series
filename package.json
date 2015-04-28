@@ -1,16 +1,14 @@
 {
-  "name": "ta",
+  "name": "data-series",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests",
-	"browserify": "./node_modules/.bin/browserify ./lib/core.js -o ./build/ta.js"
   },
   "author": "",	
   "license": "",
   "devDependencies": {
-    "browserify": "^9.0.8",
     "chai": "^2.2.0",
     "mocha": "^2.2.4"
   }
