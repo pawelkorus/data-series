@@ -26,6 +26,9 @@ it('iterating over elements', function(done) {
 		expect(it.next()).to.equal(testArray[i]);
 	}
 
+	expect(it.hasNext()).to.equal(false);
+	expect(it.next()).to.be.undefined;
+
 	done();
 });
 
