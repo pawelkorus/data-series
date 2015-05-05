@@ -50,7 +50,7 @@ it('iterating more times than there is elements in input array', function(done) 
 	done();
 });
 
-it('hasNext for empty array should give true', function(done) {
+it('hasNext for empty array should give false', function(done) {
 	var testArray = [];
 
 	var it = ta.arrayIterator(testArray);
