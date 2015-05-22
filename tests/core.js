@@ -62,10 +62,10 @@ it('hasNext for empty array should give false', function(done) {
 
 });
 
-describe('valueIterator tests', function() {
+describe('valueProvider tests', function() {
 
 it('iterating when no value was set should give undefined', function(done) {
-	var it = ta.valueIterator();
+	var it = ta.valueProvider();
 	expect(it.hasNext()).to.be.true;
 	expect(it.next()).to.be.undefined;
 	
@@ -76,7 +76,7 @@ it('iterating after value was set should give this value', function(done) {
 	var trials = 3;
 	var testValue = Math.random();
 	
-	var it = ta.valueIterator(testValue);
+	var it = ta.valueProvider(testValue);
 	
 	while(trials) {
 		expect(it.hasNext()).to.be.true;
@@ -99,7 +99,7 @@ it('after changing value next should give value that was set last', function(don
 		{}
 	]
 	
-	var it = ta.valueIterator();
+	var it = ta.valueProvider();
 	
 	testValues.forEach(function(v) {
 		it.setValue(v);
