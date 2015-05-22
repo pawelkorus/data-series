@@ -5,5 +5,6 @@ module.exports = exports = {
 	arrayIterator: core.arrayIterator,
 	valueProvider: core.valueProvider,
 	ta: require('./lib/ta'),
-	statistic: require('./lib/statistic')
+	statistic: require('./lib/statistic'),
+	math: require('./lib/math')
 }
