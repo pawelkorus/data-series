@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
-var util = require('../lib/util.js');
+var utils = require('../').utils;
 
-describe('util', function() {
+describe('utils', function() {
 
 var data = [
 //	inputs			outputs	function
@@ -23,7 +23,7 @@ data.forEach(function(data) {
 
 var inputs = Array.isArray(data[0])? data[0] : [ data[0] ];
 var expectedOutput = data[1];
-var fun = util[data[2]];
+var fun = utils[data[2]];
 
 it('testing ' + data[2] + ' for ' + inputs, function(done) {
 	var output = fun.apply(null, inputs);
